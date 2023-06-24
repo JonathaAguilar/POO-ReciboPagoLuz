@@ -28,33 +28,33 @@ public class vista extends javax.swing.JDialog {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txtRecibo = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        txtFecha = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
+        txtNombre = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        txtDomicilio = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox();
+        cmbTipo = new javax.swing.JComboBox();
         jLabel7 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
+        txtCostoKi = new javax.swing.JTextField();
         panel1 = new java.awt.Panel();
         jLabel6 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
+        lblsub = new javax.swing.JTextField();
+        lblImpuesto = new javax.swing.JTextField();
+        lblTotal = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        txtKiCon = new javax.swing.JTextField();
+        btCerrar = new javax.swing.JButton();
+        btNuevo = new javax.swing.JButton();
+        btGuardar = new javax.swing.JButton();
+        btMostrar = new javax.swing.JButton();
+        btLimpiar = new javax.swing.JButton();
+        btCancelar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -63,57 +63,57 @@ public class vista extends javax.swing.JDialog {
         jLabel1.setText("Num. Recibo");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(19, 22, 80, 17);
-        getContentPane().add(jTextField1);
-        jTextField1.setBounds(100, 20, 70, 20);
+        getContentPane().add(txtRecibo);
+        txtRecibo.setBounds(100, 20, 70, 20);
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel2.setText("Fecha:");
         getContentPane().add(jLabel2);
         jLabel2.setBounds(260, 20, 80, 17);
 
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        txtFecha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                txtFechaActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField2);
-        jTextField2.setBounds(320, 20, 110, 20);
+        getContentPane().add(txtFecha);
+        txtFecha.setBounds(320, 20, 110, 20);
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel3.setText("Nombre");
         getContentPane().add(jLabel3);
         jLabel3.setBounds(20, 70, 80, 17);
-        getContentPane().add(jTextField3);
-        jTextField3.setBounds(80, 70, 350, 20);
+        getContentPane().add(txtNombre);
+        txtNombre.setBounds(80, 70, 350, 20);
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel4.setText("Tipo de Servicio");
         getContentPane().add(jLabel4);
         jLabel4.setBounds(10, 150, 100, 17);
-        getContentPane().add(jTextField4);
-        jTextField4.setBounds(80, 100, 350, 20);
+        getContentPane().add(txtDomicilio);
+        txtDomicilio.setBounds(80, 100, 350, 20);
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel5.setText("Domicilio");
         getContentPane().add(jLabel5);
         jLabel5.setBounds(20, 100, 80, 17);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Residencial", "Comercial", "Industrial", " " }));
-        getContentPane().add(jComboBox1);
-        jComboBox1.setBounds(110, 150, 90, 20);
+        cmbTipo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Residencial", "Comercial", "Industrial", " " }));
+        getContentPane().add(cmbTipo);
+        cmbTipo.setBounds(110, 150, 90, 20);
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel7.setText("Costo por Kilowatts");
         getContentPane().add(jLabel7);
         jLabel7.setBounds(220, 150, 140, 20);
 
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+        txtCostoKi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField6ActionPerformed(evt);
+                txtCostoKiActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField6);
-        jTextField6.setBounds(340, 150, 110, 20);
+        getContentPane().add(txtCostoKi);
+        txtCostoKi.setBounds(340, 150, 110, 20);
 
         panel1.setBackground(new java.awt.Color(204, 204, 204));
 
@@ -121,40 +121,40 @@ public class vista extends javax.swing.JDialog {
         jLabel6.setText("CALCULOS RECIBO DE  LUZ");
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel10.setText("Impuesto     $");
+        jLabel10.setText("Impuesto     ");
 
         jLabel9.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel9.setText("Sub Total    $");
+        jLabel9.setText("Sub Total    ");
 
         jLabel11.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel11.setText("Total a Pagar $");
+        jLabel11.setText("Total a Pagar");
         jLabel11.setToolTipText("");
 
-        jTextField5.setBackground(new java.awt.Color(204, 204, 204));
-        jTextField5.setText("0");
-        jTextField5.setToolTipText("");
-        jTextField5.setBorder(null);
-        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+        lblsub.setBackground(new java.awt.Color(204, 204, 204));
+        lblsub.setText("$");
+        lblsub.setToolTipText("");
+        lblsub.setBorder(null);
+        lblsub.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField5ActionPerformed(evt);
+                lblsubActionPerformed(evt);
             }
         });
 
-        jTextField8.setBackground(new java.awt.Color(204, 204, 204));
-        jTextField8.setText("0");
-        jTextField8.setBorder(null);
-        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+        lblImpuesto.setBackground(new java.awt.Color(204, 204, 204));
+        lblImpuesto.setText("$");
+        lblImpuesto.setBorder(null);
+        lblImpuesto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField8ActionPerformed(evt);
+                lblImpuestoActionPerformed(evt);
             }
         });
 
-        jTextField9.setBackground(new java.awt.Color(204, 204, 204));
-        jTextField9.setText("0");
-        jTextField9.setBorder(null);
-        jTextField9.addActionListener(new java.awt.event.ActionListener() {
+        lblTotal.setBackground(new java.awt.Color(204, 204, 204));
+        lblTotal.setText("$");
+        lblTotal.setBorder(null);
+        lblTotal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField9ActionPerformed(evt);
+                lblTotalActionPerformed(evt);
             }
         });
 
@@ -173,16 +173,16 @@ public class vista extends javax.swing.JDialog {
                             .addGroup(panel1Layout.createSequentialGroup()
                                 .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(lblsub, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(panel1Layout.createSequentialGroup()
                                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(lblImpuesto, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(panel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(lblTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(357, Short.MAX_VALUE))
         );
         panel1Layout.setVerticalGroup(
@@ -192,15 +192,15 @@ public class vista extends javax.swing.JDialog {
                 .addGap(18, 18, 18)
                 .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblsub, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(10, 10, 10)
                 .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblImpuesto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel11)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblTotal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 40, Short.MAX_VALUE))
         );
 
@@ -212,100 +212,100 @@ public class vista extends javax.swing.JDialog {
         getContentPane().add(jLabel8);
         jLabel8.setBounds(10, 190, 140, 20);
 
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+        txtKiCon.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
+                txtKiConActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField7);
-        jTextField7.setBounds(140, 190, 110, 20);
+        getContentPane().add(txtKiCon);
+        txtKiCon.setBounds(140, 190, 110, 20);
 
-        jButton1.setText("Cerrar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btCerrar.setText("Cerrar");
+        btCerrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btCerrarActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(350, 390, 120, 30);
+        getContentPane().add(btCerrar);
+        btCerrar.setBounds(350, 390, 120, 30);
 
-        jButton2.setText("Nuevo");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btNuevo.setText("Nuevo");
+        btNuevo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btNuevoActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2);
-        jButton2.setBounds(460, 50, 110, 30);
+        getContentPane().add(btNuevo);
+        btNuevo.setBounds(460, 50, 110, 30);
 
-        jButton3.setText("Guardar");
-        getContentPane().add(jButton3);
-        jButton3.setBounds(460, 90, 110, 30);
+        btGuardar.setText("Guardar");
+        getContentPane().add(btGuardar);
+        btGuardar.setBounds(460, 90, 110, 30);
 
-        jButton4.setText("Mostrar");
-        getContentPane().add(jButton4);
-        jButton4.setBounds(460, 150, 110, 30);
+        btMostrar.setText("Mostrar");
+        getContentPane().add(btMostrar);
+        btMostrar.setBounds(460, 150, 110, 30);
 
-        jButton5.setText("Limpiar");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btLimpiar.setText("Limpiar");
+        btLimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btLimpiarActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5);
-        jButton5.setBounds(50, 390, 120, 30);
+        getContentPane().add(btLimpiar);
+        btLimpiar.setBounds(50, 390, 120, 30);
 
-        jButton6.setText("Cancelar");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        btCancelar.setText("Cancelar");
+        btCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                btCancelarActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton6);
-        jButton6.setBounds(200, 390, 120, 30);
+        getContentPane().add(btCancelar);
+        btCancelar.setBounds(200, 390, 120, 30);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void txtFechaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_txtFechaActionPerformed
 
-    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+    private void lblsubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lblsubActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5ActionPerformed
+    }//GEN-LAST:event_lblsubActionPerformed
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+    private void txtCostoKiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCostoKiActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
+    }//GEN-LAST:event_txtCostoKiActionPerformed
 
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+    private void txtKiConActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtKiConActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
+    }//GEN-LAST:event_txtKiConActionPerformed
 
-    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
+    private void lblImpuestoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lblImpuestoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField8ActionPerformed
+    }//GEN-LAST:event_lblImpuestoActionPerformed
 
-    private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
+    private void lblTotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lblTotalActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField9ActionPerformed
+    }//GEN-LAST:event_lblTotalActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btNuevoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btNuevoActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCerrarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btCerrarActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void btLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btLimpiarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_btLimpiarActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void btCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCancelarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_btCancelarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -349,13 +349,13 @@ public class vista extends javax.swing.JDialog {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    public javax.swing.JComboBox jComboBox1;
+    public javax.swing.JButton btCancelar;
+    public javax.swing.JButton btCerrar;
+    public javax.swing.JButton btGuardar;
+    public javax.swing.JButton btLimpiar;
+    public javax.swing.JButton btMostrar;
+    public javax.swing.JButton btNuevo;
+    public javax.swing.JComboBox cmbTipo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -367,15 +367,16 @@ public class vista extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    public javax.swing.JTextField jTextField1;
-    public javax.swing.JTextField jTextField2;
-    public javax.swing.JTextField jTextField3;
-    public javax.swing.JTextField jTextField4;
-    public javax.swing.JTextField jTextField5;
-    public javax.swing.JTextField jTextField6;
-    public javax.swing.JTextField jTextField7;
-    public javax.swing.JTextField jTextField8;
-    public javax.swing.JTextField jTextField9;
+    public javax.swing.JTextField lblImpuesto;
+    public javax.swing.JTextField lblTotal;
+    public javax.swing.JTextField lblsub;
     private java.awt.Panel panel1;
+    public javax.swing.JTextField txtCostoKi;
+    public javax.swing.JTextField txtDomicilio;
+    public javax.swing.JTextField txtFecha;
+    public javax.swing.JTextField txtKiCon;
+    public javax.swing.JTextField txtNombre;
+    public javax.swing.JTextField txtRecibo;
     // End of variables declaration//GEN-END:variables
+
 }
