@@ -53,7 +53,7 @@ public class vista extends javax.swing.JDialog {
         btNuevo = new javax.swing.JButton();
         btGuardar = new javax.swing.JButton();
         btMostrar = new javax.swing.JButton();
-        btLimpiar = new javax.swing.JButton();
+        btnLimpiar = new javax.swing.JButton();
         btCancelar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -246,14 +246,14 @@ public class vista extends javax.swing.JDialog {
         getContentPane().add(btMostrar);
         btMostrar.setBounds(460, 150, 110, 30);
 
-        btLimpiar.setText("Limpiar");
-        btLimpiar.addActionListener(new java.awt.event.ActionListener() {
+        btnLimpiar.setText("Limpiar");
+        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btLimpiarActionPerformed(evt);
+                btnLimpiarActionPerformed(evt);
             }
         });
-        getContentPane().add(btLimpiar);
-        btLimpiar.setBounds(50, 390, 120, 30);
+        getContentPane().add(btnLimpiar);
+        btnLimpiar.setBounds(50, 390, 120, 30);
 
         btCancelar.setText("Cancelar");
         btCancelar.addActionListener(new java.awt.event.ActionListener() {
@@ -299,9 +299,9 @@ public class vista extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_btCerrarActionPerformed
 
-    private void btLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btLimpiarActionPerformed
+    private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btLimpiarActionPerformed
+    }//GEN-LAST:event_btnLimpiarActionPerformed
 
     private void btCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCancelarActionPerformed
         // TODO add your handling code here:
@@ -352,9 +352,9 @@ public class vista extends javax.swing.JDialog {
     public javax.swing.JButton btCancelar;
     public javax.swing.JButton btCerrar;
     public javax.swing.JButton btGuardar;
-    public javax.swing.JButton btLimpiar;
     public javax.swing.JButton btMostrar;
     public javax.swing.JButton btNuevo;
+    public javax.swing.JButton btnLimpiar;
     public javax.swing.JComboBox cmbTipo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -378,5 +378,9 @@ public class vista extends javax.swing.JDialog {
     public javax.swing.JTextField txtNombre;
     public javax.swing.JTextField txtRecibo;
     // End of variables declaration//GEN-END:variables
+
+    public void lblsub(String toString) {
+        //throw new UnsupportedOperationException("Not yet implemented");
+    }
 
 }
